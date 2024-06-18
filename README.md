@@ -1,2 +1,2 @@
-# wordle
-copy of wordle that runs in a command line and through a bash script
+# WORDLE
+personal version of wordle that operates through a set of bash + python scripts

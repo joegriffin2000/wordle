@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd ~/Github/personal/Programs/wordle
+cd ~/Github/wordle
 
 clear
 echo  -e '\033[1m  __    __              _ _      '

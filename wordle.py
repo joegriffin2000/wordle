@@ -1,16 +1,16 @@
 #wordle dupe
-#by dynaj03
+#by joegriffin2000
 import random
 
 #loading list of all possible solution words
-file = "savefile1.txt"
+file = "JoeWordList.txt"
 f = open(file,"r")
 ListOfWords = f.read().split()
 f.close()
 ListOfWords.sort()
 
 #loading list of all possible guess words
-file = "sgb-words.txt"
+file = "StanfordWordList.txt"
 f = open(file,"r")
 AllWordsStanford = f.read().split()
 f.close()
