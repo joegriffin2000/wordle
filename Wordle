@@ -1,0 +1,14 @@
+#! /bin/bash
+
+cd ~/Github/personal/Programs/wordle
+
+clear
+echo  -e '\033[1m  __    __              _ _      '
+echo ' / / /\ \ \___  _ __ __| | | ___ '
+echo ' \ \/  \/ / _ \|  __/ _  | |/ _ \'
+echo '  \  /\  / (_) | | | (_| | |  __/'
+echo -e '   \/  \/ \___/|_|  \__,_|_|\___| \033[0m'
+
+python3 wordle.py
+
+exit
