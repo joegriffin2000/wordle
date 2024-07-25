@@ -1,4 +1,5 @@
 #! /bin/bash
+printf '\033[8;40;40t'
 
 cd ~/Github/wordle
 
