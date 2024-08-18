@@ -1,20 +1,19 @@
 #wordle dupe
 #by joegriffin2000
 import random
+import os
+
+WORDLIST_DIR = "word_lists"
+SOLUTIONS_FILE = os.path.join(WORDLIST_DIR,"JoeWordList.txt")
+POSSIBILITIES_FILE = os.path.join(WORDLIST_DIR,"StanfordWordList.txt")
 
 #loading list of all possible solution words
-file = "JoeWordList.txt"
-f = open(file,"r")
-ListOfWords = f.read().split()
-f.close()
-ListOfWords.sort()
+with open(SOLUTIONS_FILE,"r") as f:
+    ListOfWords = f.read().split()
 
 #loading list of all possible guess words
-file = "StanfordWordList.txt"
-f = open(file,"r")
-AllWordsStanford = f.read().split()
-f.close()
-AllWordsStanford.sort()
+with open(POSSIBILITIES_FILE,"r") as f:
+    AllWordsStanford = f.read().split()
 
 AllLetters = set(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'])
 
