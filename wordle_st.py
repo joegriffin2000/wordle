@@ -23,6 +23,37 @@ st.title("Wordle")
 def setCount():
     st.session_state['count'] = st.session_state['count'] + 1 if 'count' in st.session_state.keys() else 1
 
+#function for added guesses into the session state
+def addGuess(guess):
+    if 'guesses' in st.session_state.keys():
+        st.session_state.update({"guesses": st.session_state['guesses'] + [getMatchString(st.session_state['solution'],guess.lower())]})
+    elif guess != None:
+        st.session_state['guesses'] = [getMatchString(st.session_state['solution'],guess.lower())]
+    else:
+        st.session_state['guesses'] = []
+
+@st.dialog("Defeat!")
+def isLose(roundNum):
+    st.error(f"Too Bad! The Word Was {st.session_state['solution'].capitalize()}")
+
+@st.dialog("Victory!")
+def isWin(roundNum):
+    match roundNum:
+        case 1:
+            st.header("Hole in One")
+        case 2:
+            st.header("Eagle")
+        case 3:
+            st.header("Birdie")
+        case 4:
+            st.header("Par")
+        case 5:
+            st.header("Bogey")
+        case _:
+            st.header("Double Bogey")
+    st.success(f"Congrats! The Word Was {st.session_state['solution'].capitalize()}")
+    
+
 def getMatchString(RandomWord,userWord):
     matchString=[":grey",":grey",":grey",":grey",":grey"]
 
@@ -53,12 +84,7 @@ user_guess = st.text_input(
             label_visibility="collapsed")
 
 if user_guess in AllWordsStanford or user_guess == None:
-    if 'guesses' in st.session_state.keys():
-        st.session_state.update({"guesses": st.session_state['guesses'] + [getMatchString(st.session_state['solution'],user_guess.lower())]})
-    elif user_guess != None:
-        st.session_state['guesses'] = [getMatchString(st.session_state['solution'],user_guess.lower())]
-    else:
-        st.session_state['guesses'] = []
+    addGuess(user_guess)
 
     for i in range(len(st.session_state['guesses'])):
         st.session_state['guesses'][i] = [st.session_state['guesses'][i][j][:-3] + st.session_state['guesses'][i][j][-3:].upper() for j in range(len(st.session_state['guesses'][i]))]
@@ -75,8 +101,9 @@ if ('solution' in st.session_state.keys() and
     'count' in st.session_state.keys() and 
     'guesses' in st.session_state.keys()):
     if user_guess == st.session_state['solution']:
-        st.toast("Victory!")
-        st.success("The Word Was " + st.session_state['solution'])
+        isWin(st.session_state['count'])
     elif st.session_state['count'] == MAX_ROUND_NUM:
-        st.toast("Too Bad!")
-        st.error("The Word Was " + st.session_state['solution'])
+        isLose(st.session_state['count'])
+    else:
+        pass
+
