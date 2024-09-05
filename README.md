@@ -4,6 +4,15 @@ Personal version of wordle that operates through a set of bash and python script
 ### How to Play
 Download the repository with all of the files in the same place. The idea should be that you can click on the file titled 'Wordle' and it will automatically start running through a terminal window. If you run into issues let me know (even if its just a file permissions issue).
 
+
+## SETUP
+First clone the repository to your device.
+
+'''git clone https://github.com/joegriffin2000/wordle.git'''
+
+After cloning the repository
+'''python -m venv .venv'''
+
 ### FAQ
 
 **How does this differ from Wordle provided by the New York Times?**
