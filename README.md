@@ -8,10 +8,21 @@ Download the repository with all of the files in the same place. The idea should
 ## SETUP
 First clone the repository to your device.
 
-'''git clone https://github.com/joegriffin2000/wordle.git'''
+'''
+git clone https://github.com/joegriffin2000/wordle.git
+'''
 
-After cloning the repository
-'''python -m venv .venv'''
+After cloning the repository, Create a python virtual environment with this command. Do not change the environment name. 
+'''
+python3 -m venv .venv
+'''
+
+Then, use pip3 to install streamlit.
+'''
+pip3 install streamlit
+'''
+
+Then you should be good to go! Have Fun!
 
 ### FAQ
 
