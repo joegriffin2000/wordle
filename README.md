@@ -29,7 +29,7 @@ Then you should be good to go! Have Fun!
 **How does this differ from Wordle provided by the New York Times?**
 Other than being able to be run within the command line, a new word is chosen for every time you play. Actually, the reason that I made this program in the first place was because I really enjoyed playing wordle and got frustrated that I couldn't play it multiple times a day. This version is kind of built for that purpose. Also, the word list is slightly different as I went through and hand picked the words that I wanted to see as solutions.
 
-**Why is the word listt different?**
+**Why is the word list different?**
 Sometimes I felt like the words chosen for the wordle game were unfair so I went through and chose words I thought would be fair to my everyday use. I still haven't finished refining the word list so there are a couple words there that I haven't removed as options yet. Blame Stanford. 
 
 **Why are both of the word lists just viewable text files?**
