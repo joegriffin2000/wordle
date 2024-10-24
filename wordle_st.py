@@ -106,4 +106,3 @@ if ('solution' in st.session_state.keys() and
         isLose(st.session_state['count'])
     else:
         pass
-

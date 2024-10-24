@@ -15,14 +15,25 @@ git clone https://github.com/joegriffin2000/wordle.git
 After cloning the repository, Create a python virtual environment with this command. Do not change the environment name. 
 ```
 python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-Then, use pip3 to install streamlit.
+Then, use pip3 to install all necessary modules inside of the virtual environment.
 ```
-pip3 install streamlit
+pip3 install -r requirements.txt
+```
+
+Then, use set the wordle path in your git config to this repository.
+```
+git config --global wordle.path "$(pwd)"
 ```
 
 Then you should be good to go! Have Fun!
+
+ps. If you want to leave this command deactivates the virtual environment.
+```
+deactivate
+```
 
 ### FAQ
 
