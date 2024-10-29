@@ -7,6 +7,9 @@ WORDLIST_DIR = "word_lists"
 SOLUTIONS_FILE = os.path.join(WORDLIST_DIR,"JoeWordList.txt")
 POSSIBILITIES_FILE = os.path.join(WORDLIST_DIR,"StanfordWordList.txt")
 
+MAX_ROUND_NUM=6
+WORD_COUNT=5
+
 #loading list of all possible solution words
 with open(SOLUTIONS_FILE,"r") as f:
     ListOfWords = f.read().split()
@@ -26,9 +29,9 @@ def main():
     counter = 1
     etched = set()
     
-    while((user != RandomWord) and (counter <= 6)):
+    while((user != RandomWord) and (counter <= MAX_ROUND_NUM)):
         user = input(" - "+str(counter)+":").strip().lower()
-        if (AllWordsStanford.count(user) != 0) and (len(user) == 5):
+        if (AllWordsStanford.count(user) != 0) and (len(user) == WORD_COUNT):
             print()
             print("\t" + " ".join(list(user)))
             print("\t" + " ".join(getMatchString(RandomWord,user)))
