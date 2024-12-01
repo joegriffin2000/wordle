@@ -1,2 +1,5 @@
 #ignore environment
 .venv/
+
+#ignore DS_Store files (they add nothing)
+.DS_Store
