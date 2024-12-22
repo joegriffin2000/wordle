@@ -4,6 +4,7 @@ Personal version of wordle that operates through a set of bash and python script
 ### How to Play
 Download the repository with all of the files in the same place. The idea should be that you can click on the file titled 'Wordle' and it will automatically start running through a terminal window. If you run into issues let me know (even if its just a file permissions issue).
 
+Technically, you are able to run the program by just using commands but you have to activate the virtual environment and then run either wordle_**.py file. I can provide the instructions for this by request.
 
 ## SETUP
 First clone the repository to your device.
@@ -30,7 +31,7 @@ git config --global wordle.path "$(pwd)"
 
 Then you should be good to go! Have Fun!
 
-ps. If you want to leave this command deactivates the virtual environment.
+ps. If you want to, this command deactivates the virtual environment.
 ```
 deactivate
 ```
