@@ -19,12 +19,12 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Then, use pip3 to install all necessary modules inside of the virtual environment.
+Use pip3 to install all necessary modules inside of the virtual environment.
 ```
 pip3 install -r requirements.txt
 ```
 
-Then, use set the wordle path in your git config to this repository.
+Set the wordle path in your git config to this repository.
 ```
 git config --global wordle.path "$(pwd)"
 ```
