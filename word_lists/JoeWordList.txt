@@ -2429,10 +2429,6 @@ binge
 shunt
 femur
 libra
-seder
-honed
-coypu
-shims
 zowie
 jihad
 savvy
@@ -2447,7 +2443,6 @@ prima
 picas
 folio
 mecca
-reals
 troth
 testy
 balky
@@ -2464,15 +2459,12 @@ islet
 joust
 motet
 viral
-grads
 comfy
 voila
 woozy
 whomp
-sward
 metro
 skeet
-chine
 aerie
 bowie
 tubby
@@ -2489,7 +2481,6 @@ flyby
 braze
 inlay
 venue
-louts
 peaty
 orlon
 humpy
@@ -2504,7 +2495,6 @@ vetch
 squib
 sitar
 kiddo
-dyers
 cotta
 matzo
 lager
@@ -2533,7 +2523,6 @@ beefy
 melba
 caddy
 segue
-betel
 frizz
 drear
 kooks
@@ -2636,7 +2625,6 @@ tesla
 intro
 fiver
 coder
-duffs
 bruin
 reuse
 decaf
@@ -2665,18 +2653,13 @@ pesto
 antsy
 fizzy
 dorky
-snits
 moxie
 nobby
 paned
 druid
 rehab
 gofer
-tzars
 socko
-dorks
-eared
-anted
 elide
 scone
 hyper
@@ -2689,14 +2672,12 @@ mitre
 venal
 knish
 ritzy
-divas
 torus
 mange
 dimer
 recut
 meson
 wined
-fends
 phage
 fiats
 caulk
@@ -2708,7 +2689,6 @@ sully
 sooth
 gelds
 ahold
-raper
 pager
 fixer
 infix
@@ -2716,15 +2696,11 @@ abash
 twixt
 wacko
 primp
-nabla
-girts
-miffs
 emote
 xerox
 rebid
 grift
 disco
-perms
 catty
 glitz
 nerds
@@ -2746,7 +2722,6 @@ chiff
 micro
 girly
 nexus
-wimps
 quark
 twerp
 zesty
@@ -2764,7 +2739,6 @@ karma
 lotto
 kappa
 doggy
-stats
 condo
 loopy
 gismo
@@ -2778,7 +2752,6 @@ dutch
 mucky
 shire
 duvet
-suety
 gouda
 taupe
 nitro
@@ -2789,7 +2762,6 @@ taxer
 ruble
 elate
 agape
-iliac
 gluey
 bitsy
 outta
