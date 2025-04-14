@@ -2,7 +2,7 @@
 cd "$(git config --get wordle.path)"
 
 source .venv/bin/activate
-streamlit run wordle_st.py
+streamlit run --theme.base "dark" wordle_st.py 
 deactivate
 
 exit
