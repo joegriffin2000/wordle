@@ -2670,13 +2670,11 @@ unjam
 lipid
 mitre
 venal
-knish
 ritzy
 torus
 mange
 dimer
 recut
-meson
 wined
 phage
 fiats
@@ -2687,7 +2685,6 @@ botch
 estop
 sully
 sooth
-gelds
 ahold
 pager
 fixer

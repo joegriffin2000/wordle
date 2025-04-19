@@ -77,7 +77,7 @@ def copyCheck():
 #checking to see all plural words that exist in the list of possible solution words     
 def printingPlurals():
     for i in ListOfWords:
-        if i.startswith("d") and i.endswith('s'):
+        if i.endswith('s'):
             print(i)
 
 #getting the total number of words
@@ -90,6 +90,21 @@ def pieceCheck():
     for i in ListOfWords:
         if ((i.endswith(s1))):
             print(i)
+
+def pieceCheck():
+    forbidden_letters = ['t','r','a','c','e','p','i','o','u','s']
+    possible_words=[]
+    for word in AllWordsStanford:
+        valid = True
+        for letter in word:
+            if letter in forbidden_letters:
+                valid = False
+                break
+        if valid:
+            possible_words.append(word)
+
+    print(possible_words)
+
 
 #Running everything from here. Don't uncomment functions unless debugging
 if __name__ == "__main__":
